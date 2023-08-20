@@ -1,0 +1,22 @@
+
+// Advantage
+
+--Ease of Use
+--cross platform
+--large community
+--growing demand
+
+// Buid in 1985 Branden Ick
+// ECMA Script 1995
+jquery
+reactjs
+typescript
+
+#ECMA 
+
+--data types
+--variable
+--Expesssion
+--Control flow
+--functions
+--objects

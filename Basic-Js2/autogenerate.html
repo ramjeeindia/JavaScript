@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+</head>
+<body>
+  <div id="qrcode"></div>
+  <script>
+    async function fetchExcelData() {
+      const response = await fetch('/excel.xlsx');
+      const data = await response.json();
+      return data;
+    }
+
+    async function generateQRCode() {
+      const excelData = await fetchExcelData();
+      const encodedData = encodeURIComponent(JSON.stringify(excelData));
+      const qrCodeUrl = `https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=${encodedData}`;
+      
+      const qrCodeImage = document.createElement("img");
+      qrCodeImage.src = qrCodeUrl;
+
+      const qrCodeContainer = document.getElementById("qrcode");
+      qrCodeContainer.appendChild(qrCodeImage);
+    }
+
+    generateQRCode();
+  </script>
+</body>
+</html>
