@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // switch case
  /*switch (key) {
     case value:
@@ -57,6 +58,10 @@ switch (role) {
         default:console.log("Unknown Role");
 }
 =======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> bd17f72 (js2assg)
 // switch case
  /*switch (key) {
     case value:
@@ -114,5 +119,71 @@ switch (role) {
         break;
         default:console.log("Unknown Role");
 }
+<<<<<<< HEAD
 >>>>>>> ab610f0 (assg)
+=======
+=======
+>>>>>>> ced3cb9 (syn)
+// switch case
+ /*switch (key) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
+*/
+
+let type ='88'
+
+switch (type) {
+    case 'A':console.log("tiltel is Matching");
+        break;
+    default:console.log("Invalid Title");
+        break;
+}
+
+let grade = 'A'
+
+switch (grade) {
+    case 'A':console.log("Grade is A");
+        break;
+    case 'B':console.log("Grade is B");
+        break;
+    case 'C':console.log("Grade is C");
+        break;
+    case 'D':console.log("Grade is D");
+        break;
+    case 'E':console.log("Grade is E");
+        break;
+    case 'F':console.log("Grade is F");
+        break;
+    default:console.log("Invalid Grade");
+        break;
+}
+
+// another way to put multiple conditions
+
+let role = "CEO";
+let salary = 10000;
+
+switch (role) {
+    case "employee":
+    case "hr":
+    case "manager":
+        salary += 0.05*salary;
+    break;
+    case "CEO":
+    case "CIO":
+    case "CTO":
+        salary += 0.1*salary;
+        break;
+        default:console.log("Unknown Role");
+}
+<<<<<<< HEAD
+=======
+>>>>>>> ab610f0 (assg)
+>>>>>>> ced3cb9 (syn)
+>>>>>>> bd17f72 (js2assg)
 console.log(salary);
