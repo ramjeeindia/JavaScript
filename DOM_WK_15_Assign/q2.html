@@ -1,0 +1,41 @@
+<!-- 2. You have been assigned a task to implement a theme toggle feature for a website. The website currently displays which mode it is in (either "Dark Mode" or "Light Mode") and has a toggle
+button. The challenge is to use DOM manipulation to toggle the theme between dark and light modes when the button is clicked. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 2</title>
+    <!-- My internal CSS -->
+    <style>
+      .dark-mode {
+        background-color: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="">
+    <h1>This is Light mode</h1>
+    <button>Toggle Theme</button>
+  </body>
+</html>
+
+    <script>
+   
+let body = document.querySelector('body');
+let heading = document.querySelector('h1');
+let toggleBtn = document.querySelector('button');
+
+// adding event listner
+toggleBtn.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  if (body.getAttribute('class') === 'dark-mode') {
+    heading.textContent = 'This is Dark mode';
+  } else {
+    heading.textContent = 'This is Light mode';
+  }
+});
+    </script>
+</body>
+</html>

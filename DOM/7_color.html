@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+   <style>
+    body{
+        height:100vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        padding: 16px;
+        font-size: 20px;
+        border-radius: 5px;
+        border-color: #80808080;
+    }
+   </style>
+</head>
+<body>
+ 
+<button id="button">Press me to Change</button>
+    
+<script>
+
+// hex color is combination of # 1234567890 ABCDEF means 16 character code
+
+const btn = document.getElementById("button");
+
+const randomColor = () => {
+    let val = "0123456789ABCDEF";
+    let cons ="#";
+ for (let i = 0; i < 6; i++){
+     // cons = cons +val[Math.random * 16];
+    //  math.random ek function hai so () lega
+     cons = cons +val[Math.floor(Math.random() * 16)];
+}
+return cons;
+};
+
+// let names = "Anurag";
+// names[5];
+// Ans = g;
+
+// Math.random higesst val 0- 0.99 dega 16 se multiply 16 * 0.99 then max 15+ then we can use floor formula
+
+console.log(randomColor());
+
+function changeRandomColor() {
+  document.body.style.backgroundColor = randomColor();  
+}
+
+// btn.addEventListener("mouseover", changeRandomColor);
+// btn.addEventListener("click", changeRandomColor);
+// btn.addEventListener("mouseout", changeRandomColor);
+
+btn.addEventListener("click",changeRandomColor);
+
+
+
+</script>
+
+</body>
+</html>

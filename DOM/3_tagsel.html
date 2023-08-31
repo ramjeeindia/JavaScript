@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- tag name -->
+    <h4>Hey</h4>
+    <h4>namste</h4>
+    <h4>Hola</h4>
+
+</body>
+<script>
+
+// tag selector
+
+let tagEle = document.getElementsByTagName("h4");
+
+// console.log(tagEle);
+console.log(tagEle[1].innerHTML);
+// change 3rd value
+tagEle[2].innerText = "Hello pwskills";
+// change tag color red
+tagEle[2].style.color = "red"
+
+</script>
+</html>

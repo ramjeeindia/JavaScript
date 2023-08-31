@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display on body</title>
+</head>
+<body>
+   <ul>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+   </ul>
+    
+
+<h1 class="pwskills"></h1>
+
+<script>
+//  for create documnet.crete element then h1 tag will create
+let title = document.createElement("h1");
+title.className ="pwskills";
+title.style.fontsize ="25px";
+title.textContent = "PW Skills ! Namaste";
+console.log(title);
+// for show on body 
+document.body.appendChild(title);
+
+
+//  remove child which is added as ul list
+
+let ulsel = document.querySelector("ul");
+console.log(ulsel);
+
+let lists = document.querySelectorAll("li");
+
+console.log(lists);
+
+// remove
+
+for (list of lists){
+    ulsel.removeChild(list);
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manuplation</title>
+</head>
+<body>
+    <h2>hello</h2>
+    <h2 class="class1">hi</h2>
+    <h2 id="id1">welcome</h2>
+    <h2>pwskills</h2>
+
+    <script>
+        //  query selector ek hi tag ke nader class id and tag sabhi
+//  let queryresult = document.querySelector("#id1");
+  let queryresult = document.querySelector(".class1");
+     console.log(queryresult);
+//  if we update class name
+    //  queryresult.className ="right";
+    //  <h2 class="right">hi</h2>
+
+    // assign multiple class
+// queryresult.classList = "item cat set ";
+
+// result <h2 class="item cat set ">hi</h2>
+ 
+// for title attribute set
+queryresult.setAttribute("title","query select");
+
+// for class attribute
+// queryresult.setAttribute("class","query class");
+
+// for id attribute
+// queryresult.setAttribute("id","holy");
+
+// window.document  we can write document as windows.document
+
+
+
+
+    </script> 
+</body>
+</html>

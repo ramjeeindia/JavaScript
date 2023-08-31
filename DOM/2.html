@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Part</title>
+</head>
+<body>
+ <!-- id -->
+ <!-- <p id="one">Namaste</p> -->
+ <p id="one"><span>Hello </span>Namaste</p>
+
+ <ul>
+    <li class="tech">One</li>
+    <li class="tech">Two</li>
+    <li class="tech">Three</li>
+ </ul>
+
+ <script>
+    //id  document.getElementById give name like one
+    // document.getElementById("one");
+    // console.log(object);
+
+    // or define as veriable
+
+    let var1 = document.getElementById("one");
+    // console.log(var1);
+    // for cach inner text
+    console.log(var1.innerText);
+
+//  BROwSER KE CONSOLE ME dikhega Hello Namaste
+
+    // console.log(var1.innerHTML);
+
+
+    // YADI HUM innerHTML likhte to pur a span ke sath dikega <span>Hello </span>Namaste
+
+// ########### Class
+
+let var2 =  document.getElementsByClassName("tech");
+// targer 3rd
+console.log(var2[2].innerText);
+// we  can change html element like below then print will nodejs in plave of 2nd ele val
+var2[1].innerText="NodeJs";
+
+
+ </script>
+</body>
+</html>

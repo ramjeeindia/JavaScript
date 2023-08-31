@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom part 3</title>
+</head>
+<body>
+    <h1>Learn click even and get messgae</h1>
+    <p id="iclick"></p>
+
+
+<!-- on click on button onclick alredy define for click-->
+
+<button onclick="hey()" id="jss" >Submit</button>
+
+    <script>
+        // add eventlistner  click /mouse/ enter
+// document.addEventListener("click",hello);
+document.addEventListener("mouseenter",hello);
+// hello name ka function bnana hai
+ function hello(){
+    document.getElementById("iclick").innerText ="Hello India";
+ }
+
+//  on click function define  to get result
+
+function hey() {
+    document.getElementById("jss").innerText = "Login";
+    document.getElementById("jss").style.color ="red";
+    document.getElementById("jss").style.backgroundColor="green";
+    document.getElementById("jss").style.padding="10px";
+    document.getElementById("jss").style.border="2px solid yellow";
+
+}
+
+    </script>
+</body>
+</html>

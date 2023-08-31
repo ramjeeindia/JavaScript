@@ -1,0 +1,92 @@
+<!-- 8. Your task is to create a webpage that displays the time in hours, minutes, and seconds in the center of the screen. Format the time to have 2 digits for hours, minutes, and seconds, and use the time's values to assign a hex code to the background. The timer should update in real-time without any user interaction. For
+Example: If the time is 12:10:50 the background color of the webpage will have the hex code “#121050”. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q8</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .time-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        color: #fff;
+      }
+
+      .time {
+        display: flex;
+        gap: 10px;
+        border: 1px solid #fff;
+        padding: 10px;
+        border-radius: 6px;
+      }
+
+      .hour,
+      .min,
+      .sec,
+      span {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="time-container">
+      <div class="time">
+        <div class="hour">hour</div>
+        <span>:</span>
+        <div class="min">minute</div>
+        <span>:</span>
+        <div class="sec">second</div>
+      </div>
+    </div>
+    <script>
+      // fetching elements
+      let container = document.querySelector(".time-container");
+      let hourBox = document.querySelector(".hour");
+      let minBox = document.querySelector(".min");
+      let secBox = document.querySelector(".sec");
+
+      // function to change bg-color
+      let changeBgColor = (hexcode) => {
+        container.style.backgroundColor = hexcode;
+      };
+
+      // function to render time
+      let showTime = () => {
+        let date = new Date();
+        let hour = date.getHours();
+        let minute = date.getMinutes();
+        let second = date.getSeconds();
+
+        if (hour < 10) {
+          hour = "0" + hour;
+        }
+        if (minute < 10) {
+          minute = "0" + minute;
+        }
+        if (second < 10) {
+          second = "0" + second;
+        }
+
+        hourBox.textContent = hour;
+        minBox.textContent = minute;
+        secBox.textContent = second;
+
+        changeBgColor(`#${hour}${minute}${second}`);
+      };
+
+      // setting interval to call func on every 1 sec automatically
+      setInterval(showTime, 1000);
+    </script>
+  </body>
+</html>
