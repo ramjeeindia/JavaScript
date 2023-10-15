@@ -42,7 +42,7 @@ class BankAccount {
   }
   
   // test-case
-  let accountHolder = new BankAccount(1000, 'Jay');
+  let accountHolder = new BankAccount(1500, 'Ramjee');
   accountHolder.checkBalance();
   
   accountHolder.deposit(500);

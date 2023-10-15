@@ -33,8 +33,8 @@ class Product {
   // test-case
   const inventory = new Inventory();
   
-  const product1 = new Product('Laptop', 'Electronics', 899, 10);
-  const product2 = new Product('Books', 'Books', 20, 50);
+  const product1 = new Product('Laptop', 'Electronics', 1000, 10);
+  const product2 = new Product('Books', 'Books', 320, 50);
   
   inventory.addProduct(product1);
   inventory.addProduct(product2);

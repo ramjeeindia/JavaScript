@@ -56,8 +56,8 @@ class Student {
   // test-case
   const admissionOffice = new Admission();
   
-  let student1 = new Student('aayush', 'aayush@pw.live');
-  let student2 = new Student('jay', 'jay@pw.live');
+  let student1 = new Student('ramjee', 'ramjee@gamil.com');
+  let student2 = new Student('hitesh', 'hitesh@gmail.com');
   
   admissionOffice.enrollStudent(student1);
   admissionOffice.enrollStudent(student2);

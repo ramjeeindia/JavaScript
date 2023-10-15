@@ -40,11 +40,11 @@ class Temperature {
   console.log(`Initial Fahrenheit: ${temprature.getFahrenheit}°F`);
   console.log();
   
-  temprature.setCelsius = 25;
+  temprature.setCelsius = 36;
   console.log(`Celsius: ${temprature.getCelsius}°C`);
   console.log(`Fahrenheit: ${temprature.getFahrenheit}°F`);
   console.log();
   
-  temprature.setFahrenheit = 68;
+  temprature.setFahrenheit = 100;
   console.log(`Celsius: ${temprature.getCelsius}°C`);
   console.log(`Fahrenheit: ${temprature.getFahrenheit}°F`);
